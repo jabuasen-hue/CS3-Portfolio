@@ -1,8 +1,17 @@
-# zodiacSectionLN.py
+# Coding Exercise: Chinese Zodiac Finder
+
+## Requirements
+1. Prompt user for birth year (baseline 1900).
+2. Validate input so years before 1900 trigger an error and terminate execution.
+3. Compute and display the matching Chinese Zodiac sign based on a 12-year cycle starting from 1900.
+
+## Python Source Code (`zodiacLithiumBuasen.py`)
+```python
+# zodiacLithiumBuasen.py
 
 # Define baseline year and zodiac signs with Chinese characters and pinyin
-START_YEAR = 1900
-ZODIAC_SIGNS = [
+start_year = 1900
+zodiac_signs = [
     "Rat (鼠 / Shǔ)",
     "Ox (牛 / Niú)",
     "Tiger (虎 / Hǔ)",
@@ -26,14 +35,14 @@ def main():
         return
 
     # Requirement b & c: Validate user input (must not be earlier than 1900)
-    if birth_year < START_YEAR:
-        print(f"Invalid year! Year of birth must not be earlier than {START_YEAR}.")
+    if birth_year < start_year:
+        print(f"Invalid year! Year of birth must not be earlier than {start_year}.")
         return
 
     # Requirement d & e: Determine Chinese zodiac sign using modulo arithmetic
     # Baseline year 1900 maps to index 0 (Rat)
-    zodiac_index = (birth_year - START_YEAR) % 12
-    zodiac_sign = ZODIAC_SIGNS[zodiac_index]
+    zodiac_index = (birth_year - start_year) % 12
+    zodiac_sign = zodiac_signs[zodiac_index]
 
     # Display output
     print(f"Your Chinese Zodiac Sign is: {zodiac_sign}")
