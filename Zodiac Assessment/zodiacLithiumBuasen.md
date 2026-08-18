@@ -50,6 +50,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-![Valid Input Text](image.png)
+[alt text](image.png)
 
-![Invalid Output Text](image-1.png)
+![alt text](image-1.png)
