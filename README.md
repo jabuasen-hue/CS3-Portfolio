@@ -3,4 +3,4 @@
 Welcome to my coding portfolio!
 
 ## Exercises
-- [Chinese Zodiac Exercise](./ZodiacExercise/zodiacLithiumBuasen.md)
+- [Chinese Zodiac Exercise](./Zodiac/zodiacLithiumBuasen.md)
