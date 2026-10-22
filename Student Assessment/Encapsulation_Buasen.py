@@ -22,16 +22,17 @@ class BankAccount:
         else:
             self.__balance = value
 
+
 print("Output:")
 print("Account 1")
-    
+
 my_account = BankAccount(12345, 1000.00)
-    
+
 print(f"Account Number: {my_account.account_number}")
-print(f"Balance: {my_account.balance:.2f}")
-    
+print(f"Balance: {my_account.balance}")
+
 print("\nUpdate balance to -100")
 my_account.balance = -100
-    
+
 print(f"Account Number: {my_account.account_number}")
-print(f"Balance: {my_account.balance:.2f}")
+print(f"Balance: {my_account.balance}")
